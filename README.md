@@ -6,7 +6,7 @@
 
 HTMLAssertion adds assertions for testing rendered HTML using CSS selectors.
 
-It is very useful in Phoenix controller and integration tests.
+Use them in your Phoenix controller and integration tests.
 
 ## Installation
 
