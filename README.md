@@ -1,12 +1,16 @@
 # HtmlAssertion
 
+[![Build Status](https://travis-ci.org/btbinhtran/html_assertion.svg?branch=master)](https://travis-ci.com/btbinhtran/html_assertion)
+[![Hex pm](https://img.shields.io/hexpm/v/html_assertion.svg?style=flat)](https://hex.pm/packages/assert_html)
+[![Coverage Status](https://coveralls.io/repos/github/btbinhtran/html_assertion/badge.svg?branch=master)](https://coveralls.io/github/btbinhtran/html_assertion?branch=master)
+
 HTMLAssertion adds assertions for testing rendered HTML using CSS selectors.
 
 It is very useful in Phoenix controller and integration tests.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+The package can be installed
 by adding `html_assertion` to your list of dependencies in `mix.exs`:
 
 ```elixir
