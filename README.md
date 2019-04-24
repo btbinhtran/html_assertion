@@ -16,7 +16,7 @@ by adding `html_assertion` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:html_assertion, "~> 0.1.3", only: :test}
+    {:html_assertion, "~> 0.1.4", only: :test}
   ]
 end
 ```

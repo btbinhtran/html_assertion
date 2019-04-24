@@ -227,6 +227,7 @@ defmodule HTMLAssertion do
   ## assert elements in selector
       assert_select(html, ".container table", ~r{<p>Hello</p>})
   """
+
   @spec assert_select(html, Regex.t()) :: html | no_return()
   def assert_select(html, %Regex{} = value) do
     html(:assert, html, nil, match: value)
@@ -270,7 +271,7 @@ defmodule HTMLAssertion do
   end
 
   def assert_select(html, css_selector, value, block_fn) when is_binary(html) and is_binary(css_selector) and is_binary(value) do
-    html(:assert, html, css_selector, [match: value], block_fn)
+    html(:assert, html, css_selector, [text: value], block_fn)
   end
 
   @spec assert_select(html, css_selector, attributes, block_fn | nil) :: html | no_return()

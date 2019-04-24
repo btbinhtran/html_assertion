@@ -25,7 +25,19 @@ defmodule HTMLAssertionTest do
       refute_select(html, ".container h5")
     end
 
-    test "expect pass to caballack selected html", %{html: html} do
+    test "expect assert_select/3 with String argument to match on exact text", %{html: html} do
+      html
+      |> assert_select("p", "Paragraph")
+    end
+
+    test "expect assert_select/3 with unmatched text to raise AssertionError",
+      %{html: html} do
+      assert_raise AssertionError, fn ->
+        assert_select(html, "p", "Para")
+      end
+    end
+
+    test "expect pass to callback selected html", %{html: html} do
       result_html =
         assert_select(html, ".container", fn sub_html ->
           assert sub_html == "<div class=\"container\"><h1>Hello</h1><p class=\"description\">\n            Paragraph\n          </p><h1>World</h1></div>"
@@ -144,11 +156,6 @@ defmodule HTMLAssertionTest do
       end
 
       assert_select(html, "h1", ~r{Hello World})
-      assert_select(html, "h1", "Hello World")
-
-      assert_raise AssertionError, ~r"Value not found", fn ->
-        assert_select(html, "h1", "Hello World!!!!")
-      end
 
       refute_select(html, "h1", match: "Hello World!!!")
     end
