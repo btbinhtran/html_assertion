@@ -88,5 +88,5 @@ defmodule YourAppWeb.PageControllerTest do
 end
 ```
 
-Read the docs at [https://hexdocs.pm/html_assertion](https://hexdocs.pm/html_assertion).
+Read the docs at [https://hexdocs.pm/html_assertion](https://hexdocs.pm/html_assertion/HTMLAssertion.html).
 
