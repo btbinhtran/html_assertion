@@ -1,6 +1,6 @@
 # HtmlAssertion
 
-[![Build Status](https://travis-ci.org/btbinhtran/html_assertion.svg?branch=master)](https://travis-ci.com/btbinhtran/html_assertion)
+[![Build Status](https://travis-ci.com/btbinhtran/html_assertion.svg?branch=master)](https://travis-ci.com/btbinhtran/html_assertion)
 [![Hex pm](https://img.shields.io/hexpm/v/html_assertion.svg?style=flat)](https://hex.pm/packages/html_assertion)
 [![Coverage Status](https://coveralls.io/repos/github/btbinhtran/html_assertion/badge.svg?branch=master)](https://coveralls.io/github/btbinhtran/html_assertion?branch=master)
 
