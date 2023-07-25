@@ -1,3 +1,9 @@
+# Credit to assert_html
+This package was made from assert_html from Kr00lIX
+https://github.com/Kr00lIX/assert_html
+
+If somehow the features of this package are put in for assert_html, I would love to redirect people to use the assert_html package.
+
 # HtmlAssertion
 
 [![Build Status](https://travis-ci.com/btbinhtran/html_assertion.svg?branch=master)](https://travis-ci.com/btbinhtran/html_assertion)
